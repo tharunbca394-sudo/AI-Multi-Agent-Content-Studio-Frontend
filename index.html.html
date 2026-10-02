@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#101820">
+	<meta name="description" content="Create polished, platform-ready content with a coordinated multi-agent AI workflow.">
+	<title>AI Multi-Agent Content Studio</title>
+	<link rel="stylesheet" href="./css/frameworks.css">
+	<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="./js/app.js?v=welcome-robot-wave-20261002" defer></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-cyan-400/30 selection:text-white">
+	<div id="welcomeScreen" class="fixed inset-0 z-[80] flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.14),_transparent_30%),linear-gradient(135deg,#040816_0%,#0b1120_35%,#111827_100%)] px-4 text-white transition-all duration-700 ease-in-out" aria-live="polite">
+		<div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+			<div class="particle particle-1"></div>
+			<div class="particle particle-2"></div>
+			<div class="particle particle-3"></div>
+			<div class="particle particle-4"></div>
+			<div class="particle particle-5"></div>
+		</div>
+		<div class="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center">
+			<div class="mb-2 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.24em] text-cyan-200 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+				<span class="inline-block h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,0.9)]" aria-hidden="true"></span>
+				AI Multi-Agent System
+			</div>
+			<div id="welcomeRobotStage" class="relative mt-1 flex h-[300px] w-full max-w-[520px] items-end justify-center overflow-hidden sm:h-[330px]">
+				<div id="welcomeRobot" class="robot-shell relative h-[280px] w-[230px] shrink-0 opacity-0" aria-hidden="true">
+					<div id="welcomeRobotMotion" class="absolute inset-0">
+						<svg class="h-full w-full overflow-visible" viewBox="0 0 240 300" role="img" aria-label="A friendly humanoid AI robot">
+							<defs>
+								<linearGradient id="robotArmor" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#f8fafc"/>
+									<stop offset=".45" stop-color="#b9d5e8"/>
+									<stop offset="1" stop-color="#526b83"/>
+								</linearGradient>
+								<linearGradient id="robotDarkArmor" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#24364a"/>
+									<stop offset="1" stop-color="#101b2a"/>
+								</linearGradient>
+								<linearGradient id="robotGlass" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#132943"/>
+									<stop offset="1" stop-color="#06111f"/>
+								</linearGradient>
+								<filter id="robotGlow" x="-100%" y="-100%" width="300%" height="300%">
+									<feGaussianBlur stdDeviation="3" result="blur"/>
+									<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+								</filter>
+							</defs>
+							<ellipse cx="120" cy="287" rx="60" ry="9" fill="#22d3ee" opacity=".18"/>
+							<g id="welcomeRobotLegLeft" class="robot-leg">
+								<path d="M91 202h25l-2 48-5 25H91l-4-25z" fill="url(#robotArmor)" stroke="#b9e7fa" stroke-width="2"/>
+								<path d="M91 216h23M89 253h22" stroke="#42647e" stroke-width="3"/>
+								<path d="M91 271h21l10 9v6H76v-5z" fill="url(#robotDarkArmor)" stroke="#87dff4" stroke-width="2"/>
+								<path d="M82 282h34" stroke="#22d3ee" stroke-width="2" filter="url(#robotGlow)"/>
+							</g>
+							<g id="welcomeRobotLegRight" class="robot-leg">
+								<path d="M124 202h25l4 48-5 25h-18l-5-25z" fill="url(#robotArmor)" stroke="#b9e7fa" stroke-width="2"/>
+								<path d="M126 216h23M130 253h22" stroke="#42647e" stroke-width="3"/>
+								<path d="M132 271h18l13 10v5h-46v-5z" fill="url(#robotDarkArmor)" stroke="#87dff4" stroke-width="2"/>
+								<path d="M123 282h34" stroke="#22d3ee" stroke-width="2" filter="url(#robotGlow)"/>
+							</g>
+							<g id="welcomeRobotBody">
+								<path d="m94 104-21 15 8 77q39 20 78 0l8-77-21-15z" fill="url(#robotArmor)" stroke="#c4e9f7" stroke-width="2"/>
+								<path d="m96 112-13 11 7 63q30 14 60 0l7-63-13-11z" fill="url(#robotDarkArmor)" stroke="#6d91aa" stroke-width="2"/>
+								<path d="M104 128h32l11 12-4 31q-23 12-46 0l-4-31z" fill="#0b1b2b" stroke="#66d9f3" stroke-width="2"/>
+								<circle cx="120" cy="151" r="13" fill="#0e7490" opacity=".5"/>
+								<path d="M120 140v22m-10-11h20" stroke="#67e8f9" stroke-linecap="round" stroke-width="3" filter="url(#robotGlow)"/>
+								<path d="M102 188h36" stroke="#91d9ee" stroke-width="3" opacity=".8"/>
+								<circle cx="85" cy="155" r="4" fill="#22d3ee"/>
+								<circle cx="155" cy="155" r="4" fill="#22d3ee"/>
+							</g>
+							<g id="welcomeRobotArmLeft" class="robot-arm">
+								<circle cx="67" cy="119" r="15" fill="url(#robotDarkArmor)" stroke="#9edff2" stroke-width="3"/>
+								<path d="M64 131 49 173l8 8 15-4 12-40z" fill="url(#robotArmor)" stroke="#b9e7fa" stroke-width="2"/>
+								<circle cx="55" cy="178" r="9" fill="#26394c" stroke="#8cdcf2" stroke-width="3"/>
+								<g id="welcomeRobotHandFingersLeft" class="robot-fingers">
+									<path d="m53 186-5 25m7-24 2 25m2-25 9 20" fill="none" stroke="#c5e4f2" stroke-linecap="round" stroke-width="5"/>
+									<circle cx="49" cy="213" r="3" fill="#22d3ee"/>
+								</g>
+							</g>
+							<g id="welcomeRobotArmRight" class="robot-arm">
+								<circle cx="173" cy="119" r="15" fill="url(#robotDarkArmor)" stroke="#9edff2" stroke-width="3"/>
+								<path d="m176 131 15 42-8 8-15-4-12-40z" fill="url(#robotArmor)" stroke="#b9e7fa" stroke-width="2"/>
+								<circle cx="185" cy="178" r="9" fill="#26394c" stroke="#8cdcf2" stroke-width="3"/>
+								<g id="welcomeRobotHandFingersRight" class="robot-fingers">
+									<path d="m187 186 5 25m-7-24-2 25m-2-25-9 20" fill="none" stroke="#c5e4f2" stroke-linecap="round" stroke-width="5"/>
+									<circle cx="191" cy="213" r="3" fill="#22d3ee"/>
+								</g>
+							</g>
+							<g id="welcomeRobotHead">
+								<path d="M111 88h18v21h-18z" fill="url(#robotDarkArmor)" stroke="#91d9ee" stroke-width="2"/>
+								<path d="M119 27V15" stroke="#bdeafa" stroke-width="4" stroke-linecap="round"/>
+								<circle cx="119" cy="11" r="6" fill="#22d3ee" filter="url(#robotGlow)"/>
+								<rect x="76" y="27" width="88" height="70" rx="25" fill="url(#robotArmor)" stroke="#d3f2fb" stroke-width="2"/>
+								<rect x="83" y="37" width="74" height="49" rx="19" fill="url(#robotGlass)" stroke="#67e8f9" stroke-opacity=".7" stroke-width="2"/>
+								<path d="M93 47q27-12 54 0" fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="3"/>
+								<g filter="url(#robotGlow)">
+									<ellipse cx="103" cy="59" rx="6" ry="8" fill="#67e8f9"/>
+									<ellipse cx="137" cy="59" rx="6" ry="8" fill="#67e8f9"/>
+								</g>
+								<path id="welcomeRobotMouth" d="M106 74q13 7 27 0" fill="none" stroke="#67e8f9" stroke-linecap="round" stroke-width="3"/>
+								<circle cx="76" cy="61" r="8" fill="url(#robotDarkArmor)" stroke="#9edff2" stroke-width="2"/>
+								<circle cx="164" cy="61" r="8" fill="url(#robotDarkArmor)" stroke="#9edff2" stroke-width="2"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="welcomeSpeechBox" class="min-h-[92px] w-full max-w-xl rounded-2xl border border-cyan-400/20 bg-slate-900/50 px-5 py-4 text-left shadow-[0_0_32px_rgba(34,211,238,0.08)] backdrop-blur-sm opacity-0 transition-all duration-500">
+				<p id="welcomeSpeechText" class="m-0 text-lg leading-relaxed text-cyan-100 sm:text-xl"></p>
+			</div>
+			<button id="welcomeStartButton" class="welcome-start-button pointer-events-none inline-flex items-center gap-2 rounded-full border border-cyan-300/50 bg-[linear-gradient(135deg,#22d3ee_0%,#3b82f6_35%,#8b5cf6_100%)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white opacity-0 shadow-[0_0_30px_rgba(34,211,238,0.25)] transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300" type="button">
+				<span>Get Started</span>
+				<span aria-hidden="true">→</span>
+			</button>
+		</div>
+	</div>
+	<div id="appShell" class="min-h-screen bg-slate-950 opacity-0 pointer-events-none transition-opacity duration-500">
+		<!-- Sidebar -->
+		<aside class="offcanvas-lg offcanvas-start fixed inset-y-0 left-0 z-[1050] flex w-72 flex-col border-end border-slate-800 bg-slate-950 text-slate-100 shadow-2xl lg:!visible lg:!transform-none" tabindex="-1" id="sidebar" aria-label="Main sidebar" aria-labelledby="brandTitle">
+			<div class="flex items-center justify-between border-b border-slate-800 px-5 py-5">
+				<a class="flex min-w-0 items-center gap-3 text-decoration-none text-white" href="#dashboard" data-page="dashboard" aria-label="Content Studio dashboard">
+					<img class="h-12 w-[72px] shrink-0 rounded-xl border border-slate-700 object-cover shadow-lg shadow-black/30" src="logo.jpg" alt="" width="1280" height="832">
+					<span class="flex min-w-0 flex-col">
+						<strong class="truncate text-sm font-semibold tracking-wide" id="brandTitle">Content Studio</strong>
+						<span class="mt-1 text-xs text-slate-400">Multi-Agent AI</span>
+					</span>
+				</span>
+				</a>
+				<button class="btn-close btn-close-white d-lg-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close navigation menu"></button>
+			</div>
+
+			<nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-6" aria-label="Main navigation">
+				<p class="mb-3 px-3 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Workspace</p>
+				<button class="nav-item active flex w-full items-center gap-3 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-3 py-3 text-left text-sm font-medium text-cyan-200 transition duration-200 hover:bg-cyan-400/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-page="dashboard" aria-current="page">
+					<span class="nav-icon flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-300/10 text-lg" aria-hidden="true">⌂</span><span>Dashboard</span>
+				</button>
+				<button class="nav-item flex w-full items-center gap-3 rounded-xl border border-transparent px-3 py-3 text-left text-sm font-medium text-slate-400 transition duration-200 hover:border-slate-800 hover:bg-slate-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-page="create">
+					<span class="nav-icon flex h-8 w-8 items-center justify-center rounded-lg text-lg" aria-hidden="true">✦</span><span>Create Content</span>
+				</button>
+				<button class="nav-item flex w-full items-center gap-3 rounded-xl border border-transparent px-3 py-3 text-left text-sm font-medium text-slate-400 transition duration-200 hover:border-slate-800 hover:bg-slate-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-page="history">
+					<span class="nav-icon flex h-8 w-8 items-center justify-center rounded-lg text-lg" aria-hidden="true">◷</span><span>History</span>
+				</button>
+				<button class="nav-item flex w-full items-center gap-3 rounded-xl border border-transparent px-3 py-3 text-left text-sm font-medium text-slate-400 transition duration-200 hover:border-slate-800 hover:bg-slate-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-page="compare">
+					<span class="nav-icon flex h-8 w-8 items-center justify-center rounded-lg text-lg" aria-hidden="true">⇄</span><span>Model Compare</span>
+				</button>
+				<button class="nav-item flex w-full items-center gap-3 rounded-xl border border-transparent px-3 py-3 text-left text-sm font-medium text-slate-400 transition duration-200 hover:border-slate-800 hover:bg-slate-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-page="settings">
+					<span class="nav-icon flex h-8 w-8 items-center justify-center rounded-lg text-lg" aria-hidden="true">⚙</span><span>Settings</span>
+				</button>
+			</nav>
+
+			<div class="border-t border-slate-800 p-4">
+				<p class="api-status mb-4 flex items-center gap-2 rounded-lg border border-emerald-400/15 bg-emerald-400/5 px-3 py-2 text-xs font-medium text-emerald-300"><span class="status-dot h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.55)]" aria-hidden="true"></span>AI Service Ready</p>
+				<p class="text-xs leading-5 text-slate-500">AI Multi-Agent<br>Content Studio</p>
+			</div>
+		</aside>
+
+		<!-- Application content -->
+		<main class="min-h-screen lg:ml-72">
+			<header class="sticky top-0 z-30 flex min-h-[76px] items-center justify-between gap-4 border-b border-slate-800 bg-slate-950/90 px-4 backdrop-blur-xl sm:px-6 lg:px-10">
+				<div class="flex min-w-0 items-center gap-3 sm:gap-4">
+					<button class="menu-button inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-700 bg-slate-900 text-lg text-slate-200 transition hover:border-cyan-400/50 hover:text-cyan-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400 lg:hidden" id="menuButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+					<div class="min-w-0">
+						<p class="page-label mb-1 truncate text-[10px] font-bold uppercase tracking-[0.16em] text-cyan-400 sm:text-xs">AI MULTI-AGENT CONTENT STUDIO</p>
+						<h1 class="m-0 truncate text-sm font-medium text-slate-400 sm:text-base" id="pageTitle">Dashboard</h1>
+					</div>
+				</div>
+				<div class="flex shrink-0 items-center gap-3 sm:gap-5">
+					<button class="new-content-button inline-flex min-h-10 items-center justify-center gap-2 rounded-xl bg-blue-600 px-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 sm:px-4" type="button" data-page="create"><span aria-hidden="true">+</span><span class="hidden sm:inline">New Content</span><span class="sm:hidden">New</span></button>
+					<button class="flex items-center gap-3 rounded-xl border border-transparent p-1.5 text-left transition hover:border-slate-700 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" id="profileButton" type="button" data-bs-toggle="modal" data-bs-target="#profileModal" aria-label="Edit profile">
+						<span class="profile-avatar flex h-10 w-10 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-300/10 text-sm font-bold text-cyan-200" id="profileAvatar" aria-hidden="true">T</span>
+						<span class="profile-info hidden flex-col text-left sm:flex"><strong class="text-sm font-medium text-slate-100" id="profileName">Tharun</strong><span class="text-xs text-slate-500" id="profileRole">Student</span></span>
+					</button>
+				</div>
+			</header>
+
+			<div class="pointer-events-none fixed inset-x-0 bottom-0 top-[76px] z-0 flex items-center justify-center overflow-hidden px-6 lg:left-72" aria-hidden="true">
+				<img class="brand-watermark w-full max-w-[480px] rounded-[2rem] opacity-[0.16] mix-blend-screen object-contain [-webkit-mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_85%)]" src="logo.jpg" alt="" width="1280" height="832">
+			</div>
+			<div class="relative z-10 mx-auto w-full max-w-7xl space-y-10 px-4 py-8 sm:px-6 sm:py-10 lg:px-10">
+				<!-- Dashboard page -->
+				<section class="page active space-y-10" id="dashboardPage" data-page-view="dashboard" aria-labelledby="dashboardHeading">
+					<div class="welcome-section flex flex-col items-start justify-between gap-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-6 shadow-xl shadow-black/10 sm:p-8 lg:flex-row lg:items-center">
+						<div>
+							<p class="section-label mb-3 text-xs font-bold uppercase tracking-[0.16em] text-cyan-400">WELCOME BACK <span aria-hidden="true">👋</span></p>
+							<h2 class="mb-3 max-w-2xl text-3xl font-semibold leading-tight text-white sm:text-4xl" id="dashboardHeading">Create better content <span class="text-cyan-300">with AI agents.</span></h2>
+							<p class="welcome-description mb-0 max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">Turn your ideas into polished, platform-ready content using a multi-agent AI workflow.</p>
+						</div>
+						<button class="primary-button inline-flex min-h-12 w-full shrink-0 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:-translate-y-0.5 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 sm:w-auto" type="button" data-page="create"><span aria-hidden="true">✦</span> Create Content</button>
+					</div>
+
+					<section class="stats-grid row g-3" aria-label="Workspace statistics">
+						<article class="stat-card col-12 col-sm-6 col-xl-3"><div class="flex h-full items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-lg shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-slate-700 hover:bg-slate-900"><span class="stat-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-400/10 text-xl text-blue-300" aria-hidden="true">✦</span><div><span class="block text-xs font-medium text-slate-400">Total Generations</span><h3 class="mb-0 mt-1 text-2xl font-semibold text-white" id="totalGenerations">0</h3></div></div></article>
+						<article class="stat-card col-12 col-sm-6 col-xl-3"><div class="flex h-full items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-lg shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-slate-700 hover:bg-slate-900"><span class="stat-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 text-xl text-cyan-300" aria-hidden="true">◷</span><div><span class="block text-xs font-medium text-slate-400">Saved Content</span><h3 class="mb-0 mt-1 text-2xl font-semibold text-white" id="savedContent">0</h3></div></div></article>
+						<article class="stat-card col-12 col-sm-6 col-xl-3"><div class="flex h-full items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-lg shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-slate-700 hover:bg-slate-900"><span class="stat-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-400/10 text-xl text-sky-300" aria-hidden="true">⚡</span><div><span class="block text-xs font-medium text-slate-400">AI Agents</span><h3 class="mb-0 mt-1 text-2xl font-semibold text-white">5</h3></div></div></article>
+						<article class="stat-card col-12 col-sm-6 col-xl-3"><div class="flex h-full items-center gap-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-lg shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-slate-700 hover:bg-slate-900"><span class="stat-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-400/10 text-xl text-emerald-300" aria-hidden="true">✓</span><div><span class="block text-xs font-medium text-slate-400">Languages</span><h3 class="mb-0 mt-1 text-2xl font-semibold text-white">3+</h3></div></div></article>
+					</section>
+
+					<section class="quick-create-section" aria-labelledby="quickCreateHeading">
+						<div class="section-heading mb-4"><div><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">QUICK CREATE</p><h2 class="mb-0 text-xl font-semibold text-white sm:text-2xl" id="quickCreateHeading">What do you want to create?</h2></div></div>
+						<div class="content-type-grid row g-3">
+							<button class="content-type-card group relative col-12 col-md-6 col-xl-4 flex min-h-44 flex-col items-start rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left transition duration-200 hover:-translate-y-1 hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-content-type="LinkedIn Post"><span class="content-card-icon mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-400/10 font-bold text-blue-300" aria-hidden="true">in</span><strong class="text-sm font-semibold text-white">LinkedIn Post</strong><span class="card-description mt-2 pr-8 text-sm leading-5 text-slate-400">Professional posts, achievements and updates.</span><span class="card-arrow absolute right-5 top-5 text-lg text-slate-500 transition group-hover:translate-x-1 group-hover:text-cyan-300" aria-hidden="true">→</span></button>
+							<button class="content-type-card group relative col-12 col-md-6 col-xl-4 flex min-h-44 flex-col items-start rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left transition duration-200 hover:-translate-y-1 hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-content-type="Instagram Caption"><span class="content-card-icon mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-pink-400/10 text-xl text-pink-300" aria-hidden="true">◎</span><strong class="text-sm font-semibold text-white">Instagram Caption</strong><span class="card-description mt-2 pr-8 text-sm leading-5 text-slate-400">Engaging captions for social media.</span><span class="card-arrow absolute right-5 top-5 text-lg text-slate-500 transition group-hover:translate-x-1 group-hover:text-cyan-300" aria-hidden="true">→</span></button>
+							<button class="content-type-card group relative col-12 col-md-6 col-xl-4 flex min-h-44 flex-col items-start rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left transition duration-200 hover:-translate-y-1 hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-content-type="Blog Article"><span class="content-card-icon mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 font-bold text-amber-300" aria-hidden="true">B</span><strong class="text-sm font-semibold text-white">Blog Article</strong><span class="card-description mt-2 pr-8 text-sm leading-5 text-slate-400">Structured long-form articles and guides.</span><span class="card-arrow absolute right-5 top-5 text-lg text-slate-500 transition group-hover:translate-x-1 group-hover:text-cyan-300" aria-hidden="true">→</span></button>
+							<button class="content-type-card group relative col-12 col-md-6 col-xl-4 flex min-h-44 flex-col items-start rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left transition duration-200 hover:-translate-y-1 hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-content-type="Short Video Script"><span class="content-card-icon mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300" aria-hidden="true">▶</span><strong class="text-sm font-semibold text-white">Video Script</strong><span class="card-description mt-2 pr-8 text-sm leading-5 text-slate-400">Short-form scripts for videos and reels.</span><span class="card-arrow absolute right-5 top-5 text-lg text-slate-500 transition group-hover:translate-x-1 group-hover:text-cyan-300" aria-hidden="true">→</span></button>
+							<button class="content-type-card group relative col-12 col-md-6 col-xl-4 flex min-h-44 flex-col items-start rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left transition duration-200 hover:-translate-y-1 hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-content-type="Product Description"><span class="content-card-icon mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300" aria-hidden="true">◈</span><strong class="text-sm font-semibold text-white">Product Description</strong><span class="card-description mt-2 pr-8 text-sm leading-5 text-slate-400">Clear and persuasive product copy.</span><span class="card-arrow absolute right-5 top-5 text-lg text-slate-500 transition group-hover:translate-x-1 group-hover:text-cyan-300" aria-hidden="true">→</span></button>
+							<button class="content-type-card group relative col-12 col-md-6 col-xl-4 flex min-h-44 flex-col items-start rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-left transition duration-200 hover:-translate-y-1 hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-content-type="Professional Email"><span class="content-card-icon mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-400/10 text-indigo-300" aria-hidden="true">@</span><strong class="text-sm font-semibold text-white">Professional Email</strong><span class="card-description mt-2 pr-8 text-sm leading-5 text-slate-400">Natural and professional email drafts.</span><span class="card-arrow absolute right-5 top-5 text-lg text-slate-500 transition group-hover:translate-x-1 group-hover:text-cyan-300" aria-hidden="true">→</span></button>
+						</div>
+					</section>
+
+					<section class="recent-section" aria-labelledby="recentHeading">
+						<div class="section-heading mb-4 flex items-end justify-between gap-4"><div><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">RECENT</p><h2 class="mb-0 text-xl font-semibold text-white sm:text-2xl" id="recentHeading">Recent Content</h2></div><button class="text-button rounded-lg px-3 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-400/10 hover:text-cyan-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="button" data-page="history">View all →</button></div>
+						<div class="recent-list rounded-2xl border border-dashed border-slate-800 bg-slate-900/30" id="recentList">
+							<div class="empty-state flex flex-col items-center px-5 py-12 text-center"><span class="empty-icon mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-800 text-xl text-slate-400" aria-hidden="true">◷</span><h3 class="mb-2 text-base font-semibold text-slate-200">No content yet</h3><p class="mb-0 text-sm text-slate-500">Your generated content will appear here.</p></div>
+						</div>
+					</section>
+				</section>
+
+				<!-- Create content page -->
+				<section class="page space-y-6" id="createPage" data-page-view="create" aria-labelledby="createHeading" hidden>
+					<header class="page-header"><div><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">CONTENT GENERATOR</p><h2 class="mb-2 text-2xl font-semibold text-white sm:text-3xl" id="createHeading">Create New Content</h2><p class="mb-0 text-sm text-slate-400">Give the agents your idea and let them handle the workflow.</p></div></header>
+					<form id="contentForm" class="content-form row g-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 shadow-xl shadow-black/10 sm:p-6 lg:p-8">
+						<div class="form-group full-width col-12"><label class="mb-2 block text-sm font-medium text-slate-200" for="topic">Topic / Idea <span class="text-rose-400" aria-hidden="true">*</span></label><textarea class="form-control min-h-32 rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm leading-6 text-slate-100 placeholder:text-slate-600 focus:border-cyan-400 focus:bg-slate-950 focus:text-white focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="topic" name="topic" rows="4" placeholder="Example: My AI Multi-Agent Content Studio final-year project" required></textarea></div>
+						<div class="form-group col-12 col-md-6"><label class="mb-2 block text-sm font-medium text-slate-200" for="contentType">Content Type</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="contentType" name="contentType"><option>LinkedIn Post</option><option>Instagram Caption</option><option>Blog Article</option><option>Product Description</option><option>Short Video Script</option><option>Professional Email</option><option>Announcement</option><option>General Social Media Content</option></select></div>
+						<div class="form-group col-12 col-md-6"><label class="mb-2 block text-sm font-medium text-slate-200" for="platform">Platform</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="platform" name="platform"><option>LinkedIn</option><option>Instagram</option><option>YouTube</option><option>Website / Blog</option><option>Email</option><option>General</option></select></div>
+						<div class="form-group col-12 col-md-6"><label class="mb-2 block text-sm font-medium text-slate-200" for="audience">Target Audience</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="audience" name="audience"><option>College Students</option><option>Content Creators</option><option>Faculty</option><option>Developers</option><option>Job Seekers</option><option>General Audience</option></select></div>
+						<div class="form-group col-12 col-md-6"><label class="mb-2 block text-sm font-medium text-slate-200" for="tone">Tone</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="tone" name="tone"><option>Casual + Professional</option><option>Professional</option><option>Friendly</option><option>Educational</option><option>Storytelling</option><option>Persuasive</option></select></div>
+						<div class="form-group col-12 col-md-6"><label class="mb-2 block text-sm font-medium text-slate-200" for="language">Language</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="language" name="language"><option>English</option><option>Tamil</option><option>Tanglish</option></select></div>
+						<div class="form-group full-width col-12"><label class="mb-2 block text-sm font-medium text-slate-200" for="personalContext">Personal Context</label><textarea class="form-control min-h-28 rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm leading-6 text-slate-100 placeholder:text-slate-600 focus:border-cyan-400 focus:bg-slate-950 focus:text-white focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="personalContext" name="personalContext" rows="3" placeholder="Add your personal experience, background or context..."></textarea></div>
+						<div class="form-group full-width col-12"><label class="mb-2 block text-sm font-medium text-slate-200" for="importantPoints">Important Points</label><textarea class="form-control min-h-28 rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm leading-6 text-slate-100 placeholder:text-slate-600 focus:border-cyan-400 focus:bg-slate-950 focus:text-white focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="importantPoints" name="importantPoints" rows="3" placeholder="Add facts, points or information that must be included..."></textarea></div>
+						<div class="form-group full-width col-12"><label class="mb-2 block text-sm font-medium text-slate-200" for="cta">Call To Action</label><input class="form-control rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-600 focus:border-cyan-400 focus:bg-slate-950 focus:text-white focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="cta" name="cta" type="text" placeholder="Example: Follow for more updates"></div>
+						<div class="form-actions full-width col-12 flex flex-col-reverse gap-3 border-t border-slate-800 pt-5 sm:flex-row sm:justify-end"><button class="secondary-button min-h-11 rounded-xl border border-slate-700 bg-slate-900 px-5 text-sm font-medium text-slate-300 transition hover:border-slate-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" type="reset">Clear</button><button class="primary-button inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400" type="submit"><span aria-hidden="true">✦</span> Generate with AI Agents</button></div>
+					</form>
+				</section>
+
+				<!-- Processing and agent workflow page -->
+				<section class="page space-y-6" id="processingPage" data-page-view="processing" aria-labelledby="processingHeading" hidden>
+					<header class="page-header"><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">AGENT WORKFLOW</p><h2 class="mb-2 text-2xl font-semibold text-white sm:text-3xl" id="processingHeading">Your content is being created</h2><p class="mb-0 text-sm text-slate-400">Five specialized agents are working together on your request.</p></header>
+					<ol class="agent-workflow relative m-0 list-none space-y-3 p-0" aria-label="Content creation workflow">
+						<li class="agent-card relative flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:items-center sm:p-5" data-agent="planner"><span class="agent-number flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 text-xs font-bold text-cyan-300">01</span><div class="agent-details min-w-0 flex-1"><h3 class="mb-1 text-sm font-semibold text-white">Planner Agent</h3><p class="mb-0 text-sm leading-5 text-slate-400">Analyzes your requirements, audience, platform and tone.</p></div><span class="agent-status shrink-0 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs font-medium text-amber-200" data-agent-status>Waiting</span></li>
+						<li class="agent-card relative flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:items-center sm:p-5" data-agent="research"><span class="agent-number flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 text-xs font-bold text-cyan-300">02</span><div class="agent-details min-w-0 flex-1"><h3 class="mb-1 text-sm font-semibold text-white">Context / Research Agent</h3><p class="mb-0 text-sm leading-5 text-slate-400">Collects relevant context and supporting information.</p></div><span class="agent-status shrink-0 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs font-medium text-amber-200" data-agent-status>Waiting</span></li>
+						<li class="agent-card relative flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:items-center sm:p-5" data-agent="writer"><span class="agent-number flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 text-xs font-bold text-cyan-300">03</span><div class="agent-details min-w-0 flex-1"><h3 class="mb-1 text-sm font-semibold text-white">Writer Agent</h3><p class="mb-0 text-sm leading-5 text-slate-400">Creates the first content draft based on the context.</p></div><span class="agent-status shrink-0 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs font-medium text-amber-200" data-agent-status>Waiting</span></li>
+						<li class="agent-card relative flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:items-center sm:p-5" data-agent="reviewer"><span class="agent-number flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 text-xs font-bold text-cyan-300">04</span><div class="agent-details min-w-0 flex-1"><h3 class="mb-1 text-sm font-semibold text-white">Reviewer Agent</h3><p class="mb-0 text-sm leading-5 text-slate-400">Checks grammar, clarity, repetition and relevance.</p></div><span class="agent-status shrink-0 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs font-medium text-amber-200" data-agent-status>Waiting</span></li>
+						<li class="agent-card relative flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:items-center sm:p-5" data-agent="editor"><span class="agent-number flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 text-xs font-bold text-cyan-300">05</span><div class="agent-details min-w-0 flex-1"><h3 class="mb-1 text-sm font-semibold text-white">Editor / Refinement Agent</h3><p class="mb-0 text-sm leading-5 text-slate-400">Produces the final polished content using reviewer feedback.</p></div><span class="agent-status shrink-0 rounded-full border border-amber-300/20 bg-amber-300/10 px-3 py-1 text-xs font-medium text-amber-200" data-agent-status>Waiting</span></li>
+					</ol>
+				</section>
+
+				<!-- Final result page -->
+				<section class="page space-y-6" id="resultPage" data-page-view="result" aria-labelledby="resultHeading" hidden>
+					<header class="page-header flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">FINAL OUTPUT</p><h2 class="mb-2 text-2xl font-semibold text-white sm:text-3xl" id="resultHeading">Your Content</h2><p class="mb-0 text-sm text-slate-400">Reviewed and refined by the multi-agent workflow.</p></div><span class="content-type-badge w-fit rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-200" id="resultType">LinkedIn Post</span></header>
+					<div class="result-layout row g-4">
+						<div class="result-main col-12 col-xl-9 space-y-5">
+							<section class="editor-card overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl shadow-black/10" aria-label="Generated content editor">
+								<div class="editor-toolbar flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 px-4 py-3 sm:px-5"><span class="text-sm font-semibold text-slate-200">Final Content</span><div class="editor-actions flex flex-wrap items-center gap-2"><button class="secondary-button min-h-9 rounded-lg border border-slate-700 bg-slate-950 px-4 text-sm font-medium text-slate-300 transition hover:border-slate-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" id="copyButton" type="button">Copy</button><button class="primary-button min-h-9 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400" id="saveButton" type="button">Save</button><button class="min-h-9 rounded-lg border border-rose-500/30 bg-rose-500/10 px-3 text-sm font-medium text-rose-300 transition hover:bg-rose-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-rose-400" id="deleteResultButton" type="button" aria-label="Delete this result">Delete</button></div></div>
+								<label class="visually-hidden" for="resultContent">Generated content</label>
+								<textarea class="result-editor block min-h-[420px] w-full resize-y border-0 bg-slate-950/50 p-5 text-sm leading-7 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500/50 sm:p-7" id="resultContent" rows="18" placeholder="Your generated content will appear here..." aria-label="Generated content"></textarea>
+							</section>
+							<section class="ai-tools" aria-labelledby="aiToolsHeading"><h3 class="mb-3 text-base font-semibold text-white" id="aiToolsHeading">AI Tools</h3><div class="tool-grid row g-3">
+								<button class="tool-card col-12 col-sm-6 col-xxl-3 group flex min-h-32 flex-col items-start rounded-xl border border-slate-800 bg-slate-900/60 p-4 text-left transition hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" id="improveButton" type="button"><span class="tool-icon mb-4 flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-400/10 text-cyan-300" aria-hidden="true">✦</span><strong class="text-sm font-semibold text-slate-100">Improve</strong><span class="mt-1 text-xs text-slate-500">Refine the writing</span></button>
+								<button class="tool-card col-12 col-sm-6 col-xxl-3 group flex min-h-32 flex-col items-start rounded-xl border border-slate-800 bg-slate-900/60 p-4 text-left transition hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" id="translateButton" type="button"><span class="tool-icon mb-4 flex h-9 w-9 items-center justify-center rounded-lg bg-blue-400/10 text-blue-300" aria-hidden="true">文</span><strong class="text-sm font-semibold text-slate-100">Translate</strong><span class="mt-1 text-xs text-slate-500">Change language</span></button>
+								<button class="tool-card col-12 col-sm-6 col-xxl-3 group flex min-h-32 flex-col items-start rounded-xl border border-slate-800 bg-slate-900/60 p-4 text-left transition hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" id="imageButton" type="button"><span class="tool-icon mb-4 flex h-9 w-9 items-center justify-center rounded-lg bg-sky-400/10 text-sky-300" aria-hidden="true">▧</span><strong class="text-sm font-semibold text-slate-100">Generate Image</strong><span class="mt-1 text-xs text-slate-500">Create visual</span></button>
+								<button class="tool-card col-12 col-sm-6 col-xxl-3 group flex min-h-32 flex-col items-start rounded-xl border border-slate-800 bg-slate-900/60 p-4 text-left transition hover:border-cyan-500/40 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400" id="voiceButton" type="button"><span class="tool-icon mb-4 flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-400/10 text-emerald-300" aria-hidden="true">♫</span><strong class="text-sm font-semibold text-slate-100">Generate Voice</strong><span class="mt-1 text-xs text-slate-500">Convert to audio</span></button>
+							</div></section>
+						</div>
+						<aside class="result-sidebar col-12 col-xl-3 space-y-4" aria-label="Generation details">
+							<section class="summary-card rounded-2xl border border-slate-800 bg-slate-900/60 p-5"><h3 class="mb-4 text-sm font-semibold text-white">Agent Summary</h3><ul class="agent-summary-list m-0 list-none space-y-3 p-0 text-sm text-slate-300"><li class="flex items-center justify-between">Planner <span class="text-emerald-400" aria-label="Complete">✓</span></li><li class="flex items-center justify-between">Research <span class="text-emerald-400" aria-label="Complete">✓</span></li><li class="flex items-center justify-between">Writer <span class="text-emerald-400" aria-label="Complete">✓</span></li><li class="flex items-center justify-between">Reviewer <span class="text-emerald-400" aria-label="Complete">✓</span></li><li class="flex items-center justify-between">Editor <span class="text-emerald-400" aria-label="Complete">✓</span></li></ul></section>
+							<section class="summary-card rounded-2xl border border-slate-800 bg-slate-900/60 p-5"><h3 class="mb-4 text-sm font-semibold text-white">Content Details</h3><dl class="content-details m-0 space-y-3 text-sm"><div class="flex items-start justify-between gap-3"><dt class="text-slate-500">Platform</dt><dd class="m-0 text-right text-slate-200" id="resultPlatform">—</dd></div><div class="flex items-start justify-between gap-3"><dt class="text-slate-500">Audience</dt><dd class="m-0 text-right text-slate-200" id="resultAudience">—</dd></div><div class="flex items-start justify-between gap-3"><dt class="text-slate-500">Tone</dt><dd class="m-0 text-right text-slate-200" id="resultTone">—</dd></div><div class="flex items-start justify-between gap-3"><dt class="text-slate-500">Language</dt><dd class="m-0 text-right text-slate-200" id="resultLanguage">—</dd></div></dl></section>
+						</aside>
+					</div>
+				</section>
+
+				<!-- History page -->
+				<section class="page space-y-6" id="historyPage" data-page-view="history" aria-labelledby="historyHeading" hidden>
+					<header class="page-header"><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">YOUR LIBRARY</p><h2 class="mb-2 text-2xl font-semibold text-white sm:text-3xl" id="historyHeading">History</h2><p class="mb-0 text-sm text-slate-400">Access your previously generated content.</p></header>
+					<section class="history-container overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/30" id="historyContainer" aria-live="polite">
+						<div class="empty-state flex flex-col items-center px-5 py-16 text-center"><span class="empty-icon mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-slate-800 bg-slate-900 text-2xl text-cyan-300" aria-hidden="true">◷</span><h3 class="mb-2 text-base font-semibold text-slate-200">No saved content</h3><p class="mb-0 text-sm text-slate-500">Generate and save content to see it here.</p></div>
+					</section>
+				</section>
+
+				<!-- Model comparison page -->
+				<section class="page space-y-6" id="comparePage" data-page-view="compare" aria-labelledby="compareHeading" hidden>
+					<header class="page-header"><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">MODEL EVALUATION</p><h2 class="mb-2 text-2xl font-semibold text-white sm:text-3xl" id="compareHeading">Model Comparison</h2><p class="mb-0 text-sm text-slate-400">Compare outputs from configured AI models.</p></header>
+					<section class="compare-container space-y-5 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 shadow-xl shadow-black/10 sm:p-6">
+						<div class="form-group"><label class="mb-2 block text-sm font-medium text-slate-200" for="comparePrompt">Comparison prompt</label><textarea class="form-control min-h-32 rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm leading-6 text-slate-100 placeholder:text-slate-600 focus:border-cyan-400 focus:bg-slate-950 focus:text-white focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="comparePrompt" rows="4" placeholder="Enter a topic or prompt to compare..."></textarea></div>
+						<button class="primary-button inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-400" id="compareButton" type="button"><span aria-hidden="true">⇄</span> Compare Models</button>
+						<div class="compare-results grid grid-cols-1 gap-4 lg:grid-cols-2" id="compareResults" aria-live="polite">
+							<div class="empty-state col-span-full flex flex-col items-center rounded-xl border border-dashed border-slate-800 px-5 py-12 text-center"><span class="empty-icon mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-slate-800 text-xl text-slate-400" aria-hidden="true">⇄</span><h3 class="mb-2 text-base font-semibold text-slate-200">Model comparison</h3><p class="mb-0 max-w-md text-sm leading-6 text-slate-500">Connect your AI APIs to compare model responses here.</p></div>
+						</div>
+					</section>
+				</section>
+
+				<!-- Settings page -->
+				<section class="page space-y-6" id="settingsPage" data-page-view="settings" aria-labelledby="settingsHeading" hidden>
+					<header class="page-header"><p class="section-label mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-400">PREFERENCES</p><h2 class="mb-2 text-2xl font-semibold text-white sm:text-3xl" id="settingsHeading">Settings</h2><p class="mb-0 text-sm text-slate-400">Configure your AI workspace.</p></header>
+					<div class="settings-container space-y-3">
+						<section class="settings-card flex flex-col gap-5 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"><div><h3 class="mb-1 text-sm font-semibold text-white">Appearance</h3><p class="mb-0 text-sm text-slate-500">Choose a workspace color theme.</p></div><div class="form-group w-full sm:max-w-xs"><label class="mb-2 block text-xs font-medium text-slate-300" for="themePreference">Theme</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="themePreference" name="themePreference"><option value="dark">Dark</option><option value="light">Light</option><option value="ocean">Ocean</option><option value="forest">Forest</option><option value="ember">Ember</option></select></div></section>
+						<section class="settings-card flex flex-col gap-5 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"><div><h3 class="mb-1 text-sm font-semibold text-white">AI Provider</h3><p class="mb-0 text-sm text-slate-500">Choose the provider for your content workflow.</p></div><div class="form-group w-full sm:max-w-xs"><label class="mb-2 block text-xs font-medium text-slate-300" for="modelProvider">Provider</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="modelProvider" name="modelProvider"><option>Gemini</option><option>OpenAI</option><option>Custom API</option></select></div></section>
+						<section class="settings-card flex flex-col gap-5 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"><div><h3 class="mb-1 text-sm font-semibold text-white">Default Language</h3><p class="mb-0 text-sm text-slate-500">Set the preferred language for new content.</p></div><div class="form-group w-full sm:max-w-xs"><label class="mb-2 block text-xs font-medium text-slate-300" for="defaultLanguage">Language</label><select class="form-select rounded-xl border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:border-cyan-400 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.12)]" id="defaultLanguage" name="defaultLanguage"><option>English</option><option>Tamil</option><option>Tanglish</option></select></div></section>
+						<section class="settings-card natural-content-setting flex flex-col gap-5 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"><div><h3 class="mb-1 text-sm font-semibold text-white">Natural Content</h3><p class="mb-0 text-sm text-slate-500">Reduce generic and repetitive AI-style wording.</p></div><div class="toggle-control flex items-center gap-3"><input class="form-check-input !m-0 h-5 w-9 cursor-pointer border-slate-600 bg-slate-800 checked:!border-cyan-400 checked:!bg-cyan-400 focus:ring-cyan-400/30" id="naturalContent" name="naturalContent" type="checkbox" checked><label class="cursor-pointer text-sm text-slate-300" for="naturalContent">Enable natural content</label></div></section>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+
+	<!-- Profile editor -->
+	<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content border border-slate-700 bg-slate-900 text-slate-100">
+				<form id="profileForm">
+					<div class="modal-header border-slate-700"><h2 class="modal-title fs-5" id="profileModalTitle">Your Profile</h2><button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body space-y-4">
+						<div><label class="mb-2 block text-sm font-medium" for="profileNameInput">Name</label><input class="form-control border-slate-700 bg-slate-950 text-slate-100 placeholder:text-slate-500" id="profileNameInput" name="profileName" type="text" maxlength="60" required></div>
+						<div><label class="mb-2 block text-sm font-medium" for="profileRoleInput">Role</label><input class="form-control border-slate-700 bg-slate-950 text-slate-100 placeholder:text-slate-500" id="profileRoleInput" name="profileRole" type="text" maxlength="60" placeholder="e.g. Student, Creator, Marketer"></div>
+					</div>
+					<div class="modal-footer border-slate-700"><button class="btn btn-outline-light" type="button" data-bs-dismiss="modal">Cancel</button><button class="btn btn-primary" type="submit">Save Profile</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Accessible notification region -->
+		<div class="toast fixed bottom-4 right-4 z-[60] flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 text-sm text-slate-100 shadow-2xl shadow-black/40" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+			<span class="toast-icon flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-300" aria-hidden="true">✓</span>
+			<span id="toastMessage"></span>
+	</div>
+</body>
+</html>
